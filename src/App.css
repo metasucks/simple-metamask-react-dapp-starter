@@ -1,20 +1,8 @@
 .App {
+  height: 100vh;
+  background-color: #0d1116;
+  overflow: scroll;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +12,51 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  height: 100%;
+  background-color: #0d1116;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-container {
+  padding-top: 30px;
+}
+
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.sub-text {
+  font-size: 25px;
+  color: white;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
 }
